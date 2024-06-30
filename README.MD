@@ -1,4 +1,4 @@
-# DiffuseKronA:
+# DiffuseKronA: A Parameter Efficient Fine-tuning Method for Personalized Diffusion Model
 
 An unofficial implementation of [DiffuseKronA: A Parameter Efficient Fine-tuning Method for Personalized Diffusion Model paper](https://arxiv.org/abs/2402.17412)
 
