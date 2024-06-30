@@ -51,14 +51,13 @@ if seed is None:
     seed = random.randint(0, 2**31 - 1)
 print(f"Using seed {seed}")
 
-print(f"Prompt: {prompt}")
-
 result = pipe(
     prompt=prompt,
     negative_prompt=args.negative_prompt,
     num_inference_steps=args.num_inference_steps,
     generator=torch.manual_seed(seed),
     num_images_per_prompt=args.num_images,
+    cross_attention_kwargs={"scale": args.krona_scale},
 )
 
 if not os.path.exists(args.output_path):

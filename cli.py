@@ -152,6 +152,9 @@ def get_inference_args():
         "--krona_path", required=True, type=str, help="Path to krona weights"
     )
     inference_args.add_argument(
+        "--krona_scale", type=float, default=1.0, help="Krona scale"
+    )
+    inference_args.add_argument(
         "--embedding_path", required=True, type=str, help="Path to embeddings"
     )
     inference_args.add_argument(
